@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/fzj-white.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+
+			<div class="slides">
+				<section data-menu-title="Cover Slide">
+					<h1>Reproducible scientific simulations on the blockchain</h1>
+				</section>
+				<section data-menu-title="Problems with reproducibility">
+
+					<section data-menu-title="Problem">
+						<h2>The problem of reproducibility in science</h2>
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+							<img src="img/reproducibility-graphic-L.jpg" alt="Left image" style="max-width: 45%; height: auto;">
+							<img src="img/reproducibility-graphic-R.jpg" alt="Right image" style="max-width: 45%; height: auto;">
+						</div>
+						<a href="https://doi.org/10.1038/533452a">[Baker, M. 1,500 scientists lift the lid on reproducibility. Nature 533, 452-454 (2016)]</a>
+					</section>
+
+					<section data-menu-title="SOTA">
+						<h2>Current SOTA </h2>
+						<ul>
+							<li>Version-controlled code to track changes.</li>
+							<li>Dependency tracking to ensure consistency.</li>
+							<li>Specified hardware configurations.</li>
+							<li>Use of Docker for one-click simulation setups.</li>
+
+						</ul>
+							<aside class="notes">
+								<ul>
+									<li>Impact of host kernel changes on Dockerized simulations.</li>
+									<li>Non-deterministic simulations (e.g., Monte Carlo methods) may yield varied results even on identical setups.</li>
+								</ul>
+							</aside>
+					</section>
+
+				</section>
+
+				<section data-menu-title="Blockchain Intro">
+
+					<section data-menu-title="Blockchain is a decentralised computer">
+						<h2>Blockchain as a decentralised computer</h2>
+						<ul>
+							<li>Transactions (computations) are state transitions</li>
+							<li>State is stored in a distributed ledger</li>
+							<li>Consensus is achieved through validators</li>
+						</ul>
+					</section>
+
+					<section data-menu-title="Need for determinism in BC">
+						<h2>Need for determinism in blockchain</h2>
+						<ul>
+							<li>Consensus requires all nodes to agree on the state</li>
+							<li>Non-deterministic computations can lead to forks</li>
+							</ul>
+					</section>
+					<section data-menu-title="How determinism is achieved">
+						<h2>How determinism is achieved</h2>
+						<ul>
+							<li>Single threaded</li>
+							<li>Commutation of floating point is avoided</li>
+							<li>Use consensus algorithms to ensure agreement</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-menu-title="Onchain simulations">
+
+					<section data-menu-title="Onchain simulations">
+						<h2>Running simulations "on chain"</h2>
+						<ul>
+							<li>Completely Reproducible </li>
+							<li>Provenance and authorship is proveable</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>detect manipulation.</li>
+								<li>Provenance can be established</li>
+							</ul>
+						</aside>
+					</section>
+
+					<section data-menu-title="Example">
+						<h2>Example simulations</h2>
+						<iframe src="https://github.com/iamashwin99/deRSE25-simulation-on-ethereum-examples"></iframe>
+						<p>
+						<a href="https://github.com/iamashwin99/deRSE25-simulation-on-ethereum-examples">Source code on Github</a>
+						</p>
+
+
+
+
+
+
+				</section>
+
+
+
+			</div>
+
+
+
+
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/reveal.js-menu/menu.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSearch, RevealZoom, RevealMenu ]
+			});
+		</script>
+	</body>
+</html>
