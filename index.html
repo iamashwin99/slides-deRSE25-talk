@@ -54,6 +54,56 @@
 							</aside>
 					</section>
 
+					<section data-menu-title="Problem Reasons">
+						<h2>Why is there nondeterminism?</h2>
+						<ul>
+							<li>Floating-Point Arithmetic and hardware differences</li>
+							<li>Concurrency Parallelism and Race conditions</li>
+							<li>External Input and Environmental Factors</li>
+							<li>Hardware and Low-Level Execution</li>
+							<li>...</li>
+						</ul>
+						<aside class="notes">
+							<ul>
+								<li>
+									Floating-Point Arithmetic and Numerical Instability
+									<ul>
+										<li>Non-Associativity/Non-Commutativity:</li>
+										<li>Compiler/Hardware Differences: Variations in instruction sets (SSE vs. AVX), or math libraries (e.g., libm vs. Intel MKL).</li>
+									</ul>
+								</li>
+								<li>
+									Concurrency and Parallelism
+									<ul>
+										<li>Thread Scheduling: OS-dependent thread/process scheduling causing race conditions or inconsistent memory states in multithreaded code.</li>
+										<li>Non-Atomic Operations: Torn reads/writes on shared variables without proper synchronization.</li>
+										<li>JIT Compilation: Runtime optimizations in Java/.NET/JavaScript causing timing differences.</li>
+									</ul>
+								</li>
+								<li>
+									External Input and Environmental Factors
+									<ul>
+										<li>Randomness: Unseeded or time-seeded random number generators (RNGs).</li>
+										<li>I/O interactions: Input from sensors, networks, files, or user interactions varying between runs.</li>
+										<li>Clock Dependency: Logic relying on system time or timers (e.g., sleep() durations).</li>
+									</ul>
+								</li>
+
+								<li>
+									Hardware and Low-Level Execution
+									<ul>
+										<li>Speculative Execution: Side effects from mispredicted branches (e.g., cache timing leaks) in CPUs.</li>
+										<li>Memory Address Randomization (ASLR): Pointer values differing across runs, affecting hashing or debugging.</li>
+										<li>Thermal Throttling: CPU performance fluctuations altering thread timing.</li>
+									</ul>
+								</li>
+							</ul>
+						</aside>
+
+					</section>
+
+
+
 				</section>
 
 				<section data-menu-title="Blockchain Intro">
