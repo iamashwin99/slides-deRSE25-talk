@@ -37,8 +37,8 @@
 						</ul>
 					</section>
 
-					<section data-menu-title="SOTA">
-						<h2>Current SOTA </h2>
+					<section data-menu-title="State of the Art">
+						<h2>Current State of the Art </h2>
 						<ul>
 							<li>Version-controlled code to track changes.</li>
 							<li>Dependency tracking to ensure consistency.</li>
@@ -109,7 +109,7 @@
 				<section data-menu-title="Blockchain Intro">
 
 					<section data-menu-title="Blockchain is a decentralised computer">
-						<h2>Blockchain as a decentralised computer</h2>
+						<h2>Blockchain as a decentralised global computer</h2>
 						<ul>
 							<li>Transactions (computations) are state transitions</li>
 							<li>State is stored in a distributed ledger</li>
@@ -227,16 +227,6 @@
 				</section>
 
 				<section data-menu-title="Off chain simulations">
-					<section data-menu-title="merkle trees">
-						<h2>Using merkle trees for hashing call stack</h2>
-						<div style="display: flex; align-items: center;">
-							<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/2560px-Hash_Tree.svg.png" alt="Merkle Tree" style="max-width: 75%; height: auto;">
-						</div>
-						<a href="https://en.wikipedia.org/wiki/Merkle_tree">[Source: Wikipedia]</a>
-						<aside class="notes">
-
-						</aside>
-					</section>
 
 					<section data-menu-title="Off chain simulations">
 						<h2>Running simulations "off chain"</h2>
@@ -285,7 +275,7 @@
 		<script src="plugin/math/math.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/search/search.js"></script>
-		<script src="plugin/zoom/zoom.js"></script>
+		<!-- <script src="plugin/zoom/zoom.js"></script> -->
 		<script src="plugin/reveal.js-menu/menu.js"></script>
 		<script>
 			// More info about initialization & config:
@@ -295,7 +285,15 @@
 				hash: true,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX, RevealSearch, RevealZoom, RevealMenu ]
+				plugins: [
+				RevealMarkdown,
+				RevealHighlight,
+				RevealNotes,
+				RevealMath.KaTeX,
+				RevealSearch,
+				// RevealZoom,
+				RevealMenu ]
+
 			});
 		</script>
 	</body>
