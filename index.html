@@ -127,10 +127,57 @@
 					<section data-menu-title="How determinism is achieved">
 						<h2>How determinism is achieved</h2>
 						<ul>
+							<li>No floating point instructions</li>
 							<li>Single threaded</li>
-							<li>Commutation of floating point is avoided</li>
-							<li>Use consensus algorithms to ensure agreement</li>
+							<li>Controlling External Inputs</li>
+							<li>Controlling Random numbers</li>
+							<li>Bytecode Standardization</li>
 						</ul>
+						<aside class="notes">
+							<li>No Floating-Point Arithmetic
+								<ul>
+									<li>EVM uses 256-bit integers and fixed-point arithmetic.</li>
+								</ul>
+							</li>
+							<li>Eliminating Concurrency and Parallelism
+								<ul>
+									<li>EVM processes transactions sequentially within a block.</li>
+									<li>All nodes process transactions in the same order.</li>
+								</ul>
+							</li>
+							<li>Controlling External Inputs
+								<ul>
+									<li>Smart contracts cannot access off-chain data unless via oracles.</li>
+									<li>Contracts can only access data from the current or previous blocks.</li>
+								</ul>
+							</li>
+							<li>Managing Randomness
+								<ul>
+									<li>On-chain "randomness" is deterministic and known to all nodes.</li>
+									<li>Contracts use Commit-Reveal Schemes or Oracle-Based RNG.</li>
+								</ul>
+							</li>
+							<li>Enforcing Deterministic Execution Environments
+								<ul>
+									<li>EVM is a sandboxed virtual machine, abstracting hardware differences.</li>
+									<li>Every opcode has a fixed gas cost.</li>
+									<li>No speculative execution.</li>
+								</ul>
+							</li>
+							<li>Consensus-Driven State Transition
+								<ul>
+									<li>All nodes start from the same genesis state and apply transactions in the same order.</li>
+									<li>Transactions are replayed identically on every node.</li>
+								</ul>
+							</li>
+							<li>Bytecode Standardization
+								<ul>
+									<li>High-level code is compiled to standardized EVM bytecode.</li>
+									<li>No JIT or runtime compilation.</li>
+								</ul>
+							</li>
+						</ul>
+
 					</section>
 				</section>
 
