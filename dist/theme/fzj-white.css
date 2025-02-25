@@ -6,7 +6,6 @@
  * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  * Added elementes from the manim theme by Benjamin Hackl by Ashwin Kumar Karnad
  */
-@import url("https://apps.fz-juelich.de/fdm/fonts/css.php?family=weissenhof");
 @import url("../fonts/academicons/css/academicons.min.css");
 @import url("../fonts/awesome/css/all.min.css");
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
