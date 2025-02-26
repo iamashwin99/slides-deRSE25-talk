@@ -165,27 +165,27 @@
 					<section data-menu-title="Blockchain is a decentralised computer">
 						<h2>Blockchain as a decentralised global computer</h2>
 						<ul>
-							<li>Transactions (computations) are state transitions</li>
-							<li>State is stored in a distributed ledger</li>
-							<li>Consensus is achieved through validators</li>
+							<li><i class="fa-solid fa-arrows-spin"></i> Transactions (computations) are state transitions</li>
+							<li><i class="fa-solid fa-file-invoice"></i> State is stored in a distributed ledger</li>
+							<li><i class="fa-solid fa-list-check"></i> Consensus is achieved through validators</li>
 						</ul>
 					</section>
 
 					<section data-menu-title="Need for determinism in BC">
 						<h2>Need for determinism in blockchain</h2>
 						<ul>
-							<li>Consensus requires all nodes to agree on the state</li>
-							<li>Non-deterministic computations can lead to forks</li>
+							<li><i class="fa-solid fa-list-check"></i>Consensus requires all nodes to agree on the state</li>
+							<li><i class="fa-solid fa-arrows-split-up-and-left"></i>   Non-deterministic computations can lead to forks</li>
 							</ul>
 					</section>
-					<section data-menu-title="How determinism is achieved">
+					<section data-menu-title="How determinism is achieved" data-auto-animate>
 						<h2>How determinism is achieved</h2>
 						<ul>
-							<li>No floating point instructions</li>
-							<li>Single threaded</li>
-							<li>Controlling External Inputs</li>
-							<li>Controlling Random numbers</li>
-							<li>Bytecode Standardization</li>
+							<li><i class="fa-solid fa-text-slash"></i> No floating point instructions</li>
+							<li><i class="fa-solid fa-arrow-up-long"></i> Single threaded</li>
+							<li><i class="fa-solid fa-virus-slash"></i> Controlling External Inputs</li>
+							<li><i class="fa-solid fa-bug-slash"></i> Controlling Random numbers</li>
+							<li><i class="fa-solid fa-person-chalkboard"></i> Bytecode Standardization</li>
 						</ul>
 						<aside class="notes">
 							<li>No Floating-Point Arithmetic
@@ -231,7 +231,28 @@
 								</ul>
 							</li>
 						</ul>
+
+					</section>
+
+					<section data-menu-title="How determinism is achieved" data-auto-animate>
+						<h2>How determinism is achieved</h2>
+
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+							<ul>
+								<li><i class="fa-solid fa-text-slash"></i> No floating point instructions</li>
+								<li><i class="fa-solid fa-arrow-up-long"></i> Single threaded</li>
+								<li><i class="fa-solid fa-virus-slash"></i> Controlling External Inputs</li>
+								<li><i class="fa-solid fa-bug-slash"></i> Controlling Random numbers</li>
+								<li><i class="fa-solid fa-person-chalkboard"></i> Bytecode Standardization</li>
+							</ul>
+							<img src="img/cartoon_onchain_simulation.png" style="flex: 1; max-width: 45%; height: auto; margin-left: 20px;">
+						</div>
+						<small style="float: right;">[DALLE3]</small>
+
+						<aside class="notes">
 						Perhaps then could we leverage the blockchain for scientific simulations? At least for simple calculations?
+
+						</aside>
 
 					</section>
 				</section>
@@ -241,15 +262,28 @@
 					<section data-menu-title="Onchain simulations">
 						<h2>Running simulations "on chain"</h2>
 						<ul>
-							<li>Completely Reproducible </li>
-							<li>Provenance and authorship is proveable</li>
+							<li><i class="fa-solid fa-arrows-spin"></i> Completely Reproducible </li>
+							<li><i class="fa-solid fa-at"></i> Provenance and authorship is proveable</li>
 						</ul>
+						<br>
+						<br>
+						<br>
+						<i class="fa-brands fa-ethereum fa-3x"></i>
 						<aside class="notes">
 							<ul>
 								<li>detect manipulation.</li>
 								<li>Provenance can be established</li>
 							</ul>
 						</aside>
+					</section>
+					<section data-menu-title="Onchain simulations wokflo">
+						<h2>Running simulations "on chain" - workflow</h2>
+
+						<img src="img/onchain_workflow.drawio.png" alt="Onchain Workflow" style="max-width: 100%; height: auto;">
+						<!-- <iframe src="img/onchain_workflow.drawio.html" frameborder="0" style="width:100%; height:500px;"></iframe> -->
+						<br>
+						<i class="fa-brands fa-ethereum fa-3x"></i>
+
 					</section>
 
 					<section data-menu-title="Example">
@@ -260,12 +294,12 @@
 						</p>
 					</section>
 
-					<section data-menu-title="Downsides">
+					<section data-menu-title="Downsides" data-auto-animate>
 						<h2>Limitations of "on chain" simulations</h2>
 						<ul>
-							<li>Lack of math function (exponents, matrices, floating point, randomness)</li>
-							<li>Costs (Computation and storage)</li>
-							<li>Speed</li>
+							<li><i class="fa-solid fa-square-root-variable"></i> <i class="fa-solid fa-ban"></i> Lack of math function <br> (exponents, matrices, floating point, randomness)</li>
+							<li><i class="fa-solid fa-coins"></i> Costs (Computation and storage)</li>
+							<li><i class="fa-solid fa-worm"></i> Speed</li>
 						</ul>
 						<aside class="notes">
 							<ul>
@@ -278,6 +312,25 @@
 							One need for reproducibility is to verify that the authors input and process leads to the claimed output. Typically you do this by running the same code that the authors used and same input. Can we do something else too? In the block chain world often expensive and long calculation is done off chain and only the proof of execution of this is sent to the block chain
 					</section>
 
+					<section data-menu-title="Downsides" data-auto-animate>
+						<h2>Limitations of "on chain" simulations</h2>
+						<div style="display: flex; justify-content: space-between; align-items: center;">
+
+							<ul>
+								<li><i class="fa-solid fa-square-root-variable"></i> <i class="fa-solid fa-ban"></i> Lack of math function <br> (exponents, matrices, floating point, randomness)</li>
+								<li><i class="fa-solid fa-coins"></i> Costs (Computation and storage)</li>
+								<li><i class="fa-solid fa-worm"></i> Speed</li>
+							</ul>
+							<img src="img/cartoon_hybrid_arch.png" style="flex: 1; max-width: 45%; height: auto; margin-left: 20px;">
+						</div>
+						<small style="float: right;">[DALLE3]</small>
+
+						<aside class="notes">
+							Hybrid arch?
+
+						</aside>
+					</section>
+
 
 
 				</section>
@@ -287,8 +340,13 @@
 					<section data-menu-title="Off chain simulations">
 						<h2>Running simulations "off chain"</h2>
 						<ul>
-							<li>Use blockchain for provenance and authorship</li>
-							<li>Use merkle trees for hashing the call stack</li>
+							<li><i class="fa-solid fa-at"></i> Use blockchain for provenance and authorship</li>
+							<li><i class="fa-solid fa-server"></i> Use traditional techniques for compute</li>
+							<p>Eg:</p>
+							<ul>
+								<li><i class="fa-solid fa-florin-sign"></i> RISC0: compile to RISC5 and form arithmetic circuits</li>
+								<li><i class="fa-solid fa-sitemap"></i> Use merkle trees for hashing the call stack</li>
+							</ul>
 						</ul>
 						<aside class="notes">
 
