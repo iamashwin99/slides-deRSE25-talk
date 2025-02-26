@@ -727,7 +727,7 @@
            sodipodi:role="line"
            id="tspan3001"
            x="-809.20007"
-           y="1011.7564"><tspan style="font-weight:bold">Enter: f(0, 23)</tspan> (L3)</tspan></text>
+           y="1011.7564"><tspan style="font-weight:bold">Enter: st1(0,23)</tspan> (L3)</tspan></text>
       </g>
       <g
          transform="translate(-45.971696,-131.01994)"
@@ -760,7 +760,7 @@
            sodipodi:role="line"
            id="tspan3005"
            x="-322.3764"
-           y="1011.7759"><tspan style="font-weight:bold">Exit: f(0, 23) -> 1</tspan> (L4)</tspan></text>
+           y="1011.7759"><tspan style="font-weight:bold">Exit: st1(0,23) -> 1</tspan> (L4)</tspan></text>
       </g>
     </g>
     <path
